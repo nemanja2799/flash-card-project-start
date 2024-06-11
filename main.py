@@ -25,6 +25,7 @@ def flip_card():
     canvas.itemconfig(card_word, text=current_card["English"], fill="white")
 
 def is_known():
+
     global current_card
     to_learn.remove(current_card)
     data = pandas.DataFrame(to_learn)
